@@ -8,7 +8,7 @@
     var isPlainObject = nx.isPlainObject,
         isArray = nx.isArray;
 
-    for (var key in source){
+    for (var key in source) {
       if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
         if (isPlainObject(source[key]) && !isPlainObject(target[key]))
           target[key] = {};
